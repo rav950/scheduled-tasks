@@ -40,8 +40,8 @@ if will_rain:
     # )
     # print(message.status)
 
-    MY_EMAIL = "rav950py@gmail.com"
-    PASSWORD = "ivfawzpnctkywkwb"
+    MY_EMAIL = os.environ.get("MY_EMAIL")
+    MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
     with smtplib.SMTP("smtp.gmail.com") as connection: #smtp.mail.yahoo.com
         connection.starttls() # encrpt message
