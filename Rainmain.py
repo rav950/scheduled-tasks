@@ -8,10 +8,10 @@ import smtplib
 # e.g $env:TWILIO_ACCOUNT_SID="your_account_sid_here", list of env vars: dir ENV:
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "99456989e5d91540de91d1414e987388"  # unique api key, list of api's: apilist.fun
 
-account_sid = "AC43e3abe8c73da8e413dd8883c373bc93"
-auth_token = "1d2745bfae6bba9eb7b92404b5616a02"
+api_key = os.environ.get("OWM_API_KEY")
+account_sid = os.environ.get("ACCOUNT_SID")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 weather_parameters = {
     "lat": 52.281940,
@@ -36,7 +36,7 @@ if will_rain:
     # message = client.messages.create(
     #     body="Bring an umbrella",
     #     from_="+19478370432",
-    #     to="+447710594086",
+    #     to="+447710594009",
     # )
     # print(message.status)
 
@@ -53,6 +53,3 @@ if will_rain:
 #print(weather_data)
 # print(data["list"][1]["weather"][0]["id"])  # list in dict, weather indice 1, 0 access inside list, id tag
 # print(data["list"][1]["weather"][0]["description"])
-
-
-
