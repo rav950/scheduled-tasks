@@ -44,7 +44,7 @@ from twilio.rest import Client
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 
-api_key = os.environ.get("OWM_API_KEY")
+api_key = "99456989e5d91540de91d1414e987388" #os.environ.get("OWM_API_KEY")
 account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
