@@ -46,7 +46,7 @@ OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 
 api_key = "99456989e5d91540de91d1414e987388" #os.environ.get("OWM_API_KEY")
 account_sid = "AC43e3abe8c73da8e413dd8883c373bc93" #os.environ.get("ACCOUNT_SID")
-auth_token = "452e8d57c8bf5e14cb1e9fb9f24ec0ac" #os.environ.get("AUTH_TOKEN")
+auth_token = "853ee715cbca3bea1e9389807fdfd70a" #os.environ.get("AUTH_TOKEN")
 
 weather_parameters = {
     "lat": 52.281940,
